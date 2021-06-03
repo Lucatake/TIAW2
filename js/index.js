@@ -23,7 +23,6 @@ window.onload = () =>{
 
 function changeToRegisterEstudante(){
     event.preventDefault();
-    
 
     let newElement = `
     <h3 style="color: white;">Por favor digite as seguintes informações</h3>
