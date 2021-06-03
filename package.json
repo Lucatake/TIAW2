@@ -2,13 +2,13 @@
   "name": "curriculum",
   "version": "1.0.0",
   "description": "curriculum API for a website",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lucatake/API-Curriculum.git"
+    "url": "git+https://github.com/Lucatake/TIAW2.git"
   },
   "keywords": [
     "API",
@@ -18,9 +18,9 @@
   "author": "Microsoft + Luana Catake",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lucatake/API-Curriculum/issues"
+    "url": "https://github.com/Lucatake/TIAW2/issues"
   },
-  "homepage": "https://github.com/Lucatake/API-Curriculum#readme",
+  "homepage": "https://github.com/Lucatake/TIAW2#readme",
   "dependencies": {
     "@azure/ai-form-recognizer": "^3.1.0",
     "@azure/identity": "^1.3.0",
