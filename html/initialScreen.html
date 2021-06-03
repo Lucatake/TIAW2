@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <script>
+        onload = () => {
+            pegarNomeLS();
+            
+            let btn = document.getElementById('btn-sair');
+            btn.onclick = () => {
+                localStorage.clear();
+                window.location.replace("./../html/index.html");
+            }
+        }
+    </script>
+    <script src="./../js/initialScreen.js"></script>
+
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./../css/initialScreen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/common.css">
+
+</head>
+
+<body id="main">
+    <header class="header">
+        <!-- Use any element to open the sidenav -->
+        <button onclick="openNav()" style="width: 50px;" id="menuBtn"><i class="fas fa-bars btn"></i></button>
+        <button id="btn-sair" class="btn">Sair da Conta</button>
+    </header>
+
+    <div id="nav-bar-type">
+        <!--GERADO POR JS-->
+        
+        <!--/GERADO POR JS-->
+    </div>
+
+    <main>
+        <h1 id="titulo">Oportunidades</h1>
+        <section>
+            <div class="well" id="tabela">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Titulo</th>
+                            <th>Salário</th>
+                            <th style="width: 36px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-ativ">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright 2020() Doors Teams
+    </footer>
+
+    <script></script>
+    <link rel="stylesheet" href="./../css/initialScreen.css">
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./../css/common.css">
+    <link rel="stylesheet" type="text/css" href="./../css/addVaga.css">
+
+
+    <script>
+        onload = () => {
+            obtemInfos();
+            pegarNomeLS();
+            let btn = document.getElementById('btn-sair');
+            btn.onclick = () => {
+                localStorage.clear();
+                window.location.replace("./../html/index.html");
+            }
+        }
+    </script>
+</head>
+
+<body id="main">
+    <header class="header">
+        <!-- Use any element to open the sidenav -->
+        <button onclick="openNav()" style="width: 50px;" id="menuBtn"><i class="fas fa-bars btn"></i></button>
+        <button id="btn-sair" class="btn">Sair da Conta</button>
+    </header>
+
+    <div id="nav-bar-type">
+        <!--GERADO POR JS-->
+        
+        <!--/GERADO POR JS-->
+    </div>
+    <main>
+        <div class="row" id="list-ativ">
+        <!--GERADO POR JS-->
+            
+        <!--/GERADO POR JS-->
+        </div>
+    </main>
+    <footer>
+        Copyright 2020() Doors Teams
+    </footer>
+    <script src="./../js/addVaga.js"></script>
+</body>
+
+</html>

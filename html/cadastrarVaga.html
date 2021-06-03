@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <script>
+        onload = () => {
+            pegarNomeLS();
+            let btn = document.getElementById('btn-sair');
+            btn.onclick = () => {
+                localStorage.clear();
+                window.location.replace("./../html/index.html");
+            }
+            let tituloAtiv = document.getElementById('titulo')
+            let salario = document.getElementById('salario')
+            let descricao = document.getElementById('descricao')
+        }
+    </script>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="./../js/cadastrarVaga.js"></script>
+    <link rel="stylesheet" type="text/css" href="./../css/common.css">
+    <link rel="stylesheet" type="text/css" href="./../css/cadastrarVaga.css">  <!--obs-->
+
+    <script src="./../js/cadastrarVaga.js"></script>  <!--obs-->
+</head>
+
+<body id="main">
+    <header class="header">
+        <!-- Use any element to open the sidenav -->
+        <button onclick="openNav()" style="width: 50px;" id="menuBtn"><i class="fas fa-bars btn"></i></button>
+        <button id="btn-sair" class="btn">Sair da Conta</button>
+    </header>
+
+    <div id="nav-bar-type">
+        <!--GERADO POR JS-->
+        
+        <!--/GERADO POR JS-->
+    </div>
+    <main style="padding: 20px;">
+        <h1>Adicionar vaga</h1>
+        <div id="campo-inputs">
+            <form>
+                <div>
+                    <label>Título:</label>
+                    <div class="row">
+                        <input autocomplete="off" type="text" id="titulo" aria-describedby="Atividade" placeholder="Título Vaga">
+                    </div>
+                </div>
+                <div>
+                    <label>Salário:</label>
+                    <div class="row">
+                        <input autocomplete="off" min="1" type="text" id="salario" placeholder="R$">
+                    </div>
+                </div>
+                <div>
+                    <label>Descrição:</label>
+                    <div class="row">
+                        <input style="height: 100px;" autocomplete="off" min="1" type="text" id="descricao" placeholder="Descricao">
+                    </div>
+                </div>
+                <br>
+            </form>
+            <div class="row">
+                <button class="btn btn-primary" id="btn-adicionar" onclick="ativarButton()">Adicionar Vaga</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        Copyright 2020() Doors Teams
+    </footer>
+
+    <link rel="stylesheet" href="./../css/cadastrarVaga.css">
+</body>
+
+</html>
